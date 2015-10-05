@@ -37,7 +37,7 @@ secrets:
   cookie: secretsauce
 
 files:
-  enable: false
+  enable: true
   provider: local
   maxFileSize: 100000000
   restrictTypes: true
@@ -58,9 +58,9 @@ auth:
     passwordRegex: ^.{8,64}$
 
 private:
-  enable: false
-  roster: online # online / all
-  expire: 360 # false or number of minutes
+  enable: true
+  roster: all # online / all
+  expire: false # false or number of minutes
 
 noRobots: true # Serve robots.txt with disallow
 
@@ -71,7 +71,7 @@ giphy:
   apiKey: dc6zaTOxFJmzC
 
 rooms:
-  private: false
+  private: true
 
 i18n:
   locale: en
